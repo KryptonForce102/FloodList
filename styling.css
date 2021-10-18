@@ -10,29 +10,36 @@ a:hover { text-decoration: none; }
 
 a:active { text-decoration: none; }
 
+/* Literally just for the navigation bar */
+
 ul {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
 li {
-    float: left;
+    display: inline-block;
   }
   
   a {
     display: block;
     padding: 8px;
-    background-color: rgba(0, 0, 0, 0);
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 56px;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
     color: white;
+}
+
+a:hover {
+color: turquoise;
 }
 
 header {
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 80px;
     left: 0px;
     top: 0px;
 
