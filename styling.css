@@ -2,6 +2,14 @@ body {
     background-image: url(images/bgimg.png);
 }
 
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -13,8 +21,20 @@ li {
   }
   
   a {
-      
     display: block;
     padding: 8px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 54px;
+    color: white;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+background: black;
 }
