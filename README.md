@@ -1,3 +1,3 @@
-# FE2 Hardest Maps List Site
-Runs the external website for FE2 Hardest Maps list.
+# Floodlist
+Runs the external website for Floodlist.
 Created by The Hyper Team.
