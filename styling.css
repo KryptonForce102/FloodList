@@ -29,10 +29,6 @@ li {
     color: white;
 }
 
-a:hover {
-color: turquoise;
-}
-
 header {
     position: absolute;
     width: 100%;
