@@ -29,10 +29,6 @@ a {
   color: white;
 }
 
-a:hover {
-color: #2B7FFF;
-}
-
 header {
   position: absolute;
   width: 100%;
