@@ -3,9 +3,8 @@
 <head>
     <title>FE2 - Floodlist</title>
     <link rel="stylesheet" href="styling.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-
-<script src="script.js"></script>
 
 <!-- Source Sans Pro & Roboto -->
 
@@ -17,12 +16,57 @@
 <body>
     <header>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="headerItem"><a href="#home">Home</a></li>
+            <li class="headerItem"><a href="#news">News</a></li>
+            <li class="headerItem"><a href="#contact">Contact</a></li>
+            <li class="headerItem"><a href="#about">About</a></li>
         </ul>
     </header>
 </body>
+
+<script>
+    function lerp(a, b, t){
+        return (1 - t) * a + t * b
+    }
+
+    function lerpColors(color1, color2, alpha) {
+        var result = [0, 0, 0, 0]
+        for(var c = 0; c < 4; c++){
+            result[c] = lerp(color1[c], color2[c], alpha)
+        }
+        return result
+    };
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    /////////////////
+    // Fix to make neater and more efficient //
+    // Also only does BG color instead of text-color //
+
+    async function fadeIn(){
+        for(var t = 0; t < 1; t += 0.05){
+            var newCol = lerpColors([255, 255, 255, 0], [65, 205, 255, 0], t)
+            $(this).css("background-color", 'rgb(' + newCol.join(',') + ')')
+            await sleep(20)
+        }
+    }  
+
+    async function fadeOut(){
+        for(var t = 0; t < 1; t += 0.05){
+            var newCol = lerpColors([255, 255, 255, 0], [65, 205, 255, 0], 1 - t)
+            $(this).css("background-color", 'rgb(' + newCol.join(',') + ')')
+            await sleep(20)
+        }
+    }  
+
+    /////////////////
+    /////////////////
+
+    $('.headerItem').each(function(i, obj) {
+        $(this).hover(fadeIn, fadeOut)
+    });
+</script>
 
 </html>
