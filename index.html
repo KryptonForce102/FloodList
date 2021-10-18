@@ -30,8 +30,8 @@
     }
 
     function lerpColors(color1, color2, alpha) {
-        var result = [0, 0, 0, 0]
-        for(var c = 0; c < 4; c++){
+        var result = [0, 0, 0]
+        for(var c = 0; c < 3; c++){
             result[c] = lerp(color1[c], color2[c], alpha)
         }
         return result
@@ -47,7 +47,7 @@
 
     async function fadeIn(){
         for(var t = 0; t < 1; t += 0.05){
-            var newCol = lerpColors([255, 255, 255], 0, [65, 205, 255], t)
+            var newCol = lerpColors([255, 255, 255], [65, 205, 255], t)
             $(this).css("background-color", 'rgb(' + newCol.join(',') + ')')
             await sleep(20)
         }
@@ -55,7 +55,7 @@
 
     async function fadeOut(){
         for(var t = 0; t < 1; t += 0.05){
-            var newCol = lerpColors([255, 255, 255], 0, [65, 205, 255], 1 - t)
+            var newCol = lerpColors([255, 255, 255], [65, 205, 255], 1 - t)
             $(this).css("background-color", 'rgb(' + newCol.join(',') + ')')
             await sleep(20)
         }
