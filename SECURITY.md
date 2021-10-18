@@ -9,3 +9,6 @@ Otherwise, we should be able to fix it without needing extra contact.
 ## Issue credit
 If you do manage to get an issue that we do fix, your Github username will be added to a list of
 "bug/issue finders" in the final credits of the site.
+
+## Issue spamming
+Please do not spam the issues to get our attention, doing so will lead to us locking the repository until further notice.
