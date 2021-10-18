@@ -47,7 +47,7 @@
 
     async function fadeIn(){
         for(var t = 0; t < 1; t += 0.05){
-            var newCol = lerpColors([255, 255, 255], 0, [65, 205, 255, 0], t)
+            var newCol = lerpColors([255, 255, 255, 0], [65, 205, 255, 0], t)
             $(this).css("background-color", 'rgb(' + newCol.join(',') + ')')
             await sleep(20)
         }
