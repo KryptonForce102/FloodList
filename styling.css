@@ -2,6 +2,16 @@ body {
     background-image: url(images/bgimg.png);
 }
 
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
 header {
 
 position: absolute;
