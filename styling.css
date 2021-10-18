@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/bgimg.png);
+  background-image: url(images/bgimg.png);
 }
 
 a:link { text-decoration: none; }
@@ -10,31 +10,35 @@ a:active { text-decoration: none; }
 /* Literally just for the navigation bar */
 
 ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 li {
-    display: inline-block;
-  }
-  
-  a {
-    display: block;
-    padding: 8px;
-    background-color: transparent;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    color: white;
+  display: inline-block;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: transparent;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+a:hover {
+color: #2B7FFF;
 }
 
 header {
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    left: 0px;
-    top: 0px;
-    background: black;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  background: black;
 
 }
