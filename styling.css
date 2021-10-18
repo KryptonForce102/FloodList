@@ -29,12 +29,11 @@ li {
   color: white;
 }
 
-header {
+#topHeader {
   position: absolute;
   width: 100%;
   height: 80px;
   left: 0px;
   top: 0px;
   background: black;
-
 }
