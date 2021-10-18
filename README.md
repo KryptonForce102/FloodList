@@ -1,3 +1,7 @@
 # Floodlist
-Runs the external website for Floodlist.
+Runs the website for Floodlist.
 Created by The Hyper Team.
+
+# Pull Requests
+This project is open-source, please create a pull request if you want to suggest a new feature.
+\- Kris
