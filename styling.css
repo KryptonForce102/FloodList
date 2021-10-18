@@ -20,7 +20,7 @@ li {
   display: inline-block;
 }
 
-a {
+.headerItem {
   display: block;
   padding: 8px;
   background-color: transparent;

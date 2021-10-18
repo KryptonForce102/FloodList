@@ -4,6 +4,7 @@
     <title>FE2 - Floodlist</title>
     <link rel="stylesheet" href="styling.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js" integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script>
 </head>
 
 <!-- Source Sans Pro & Roboto -->
@@ -33,35 +34,13 @@
 </body>
 
 <script>
-    function lerp(a, b, t){
-        return (1 - t) * a + t * b
-    }
-
-    function lerpColors(color1, color2, alpha) {
-        var result = [0, 0, 0]
-        for(var c = 0; c < 3; c++){
-            result[c] = lerp(color1[c], color2[c], alpha)
-        }
-        return result
-    };
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    async function fade(isOut){
-        for(var t = 0; t < 1; t += 0.05){
-            var alpha = (isOut) ? (1 - t): (t)
-            console.log(alpha)
-
-            var newCol = lerpColors([255, 255, 255], [65, 205, 255], alpha)
-            $(this).css("color", 'rgb(' + newCol.join(',') + ')')
-            await sleep(50)
-        }
-    }
-
-    $('.headerItem').each(function(i, obj) {
-        $(this).hover(function(){fade(false)},  function(){fade(true)})
+    var fadeDur = 250
+    $('.headerItem').each(function() {
+        $(this).hover(function(){
+            $(this).animate({color: "#30D5C8"}, fadeDur)
+        }, function(){
+            $(this).animate({color: "#FFFFFF"}, fadeDur)
+        })
     });
 </script>
 
