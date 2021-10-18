@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/bgimg.png);
+    background-image: url('images/bgimg.png');
 }
 
 header {
