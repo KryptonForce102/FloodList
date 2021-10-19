@@ -16,12 +16,4 @@ $(document).ready(function(){
             $(this).animate({color: "#FFFFFF"}, fadeDur)
         })
     }
-
-    // $('.headerItem').each(function() {
-    //     $(this).hover(function(){
-    //         $(this).animate({color: }, fadeDur)
-    //     }, function(){
-    //         $(this).animate({color: ""}, fadeDur)
-    //     })
-    // });
 })
