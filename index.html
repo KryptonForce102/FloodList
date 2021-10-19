@@ -19,16 +19,16 @@
     <div class="topHeader">
         <ul>
             <li>
-                <a href="#home" id="home">Home</a>
+                <a href="#home" id="homeBtn">Home</a>
             </li>
             <li>
-                <a href="#news" id="news">News</a>
+                <a href="#news" id="newsBtn">News</a>
             </li>
             <li>
-                <a href="#contact" id="contact">Contact</a>
+                <a href="#contact" id="contactBtn">Contact</a>
             </li>
             <li>
-                <a href="#about" id="about">About</a>
+                <a href="#about" id="aboutBtn">About</a>
             </li>
         </ul>
     </div>
@@ -36,12 +36,12 @@
 
 <script>
     $(document).ready(function(){
-        var fadeDur = 150
+        var fadeDur = 250
         var colors = {
-            "home": "#30D5C8",
-            "news": "#30C97D",
-            "contact": "#4F30C9",
-            "about": "#A530C9"
+            "homeBtn": "#30D5C8",
+            "newsBtn": "#30C97D",
+            "contactBtn": "#4F30C9",
+            "aboutBtn": "#A530C9"
         }
 
         for(let [key, value] of Object.entries(colors)){
