@@ -1,3 +1,7 @@
+// FileName: animateHeader.js
+// Responsibility: Handles the effects of the navigation bar.
+// Written by: Kris
+
 $(document).ready(function(){
     var fadeDur = 250
     var colors = {
