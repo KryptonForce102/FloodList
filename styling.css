@@ -7,8 +7,6 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
-/* Literally just for the navigation bar */
-
 ul {
   text-align: center;
   list-style-type: none;
@@ -32,9 +30,9 @@ a {
 .topHeader {
   position: absolute;
   width: 80%;
-  height: 10%;
+  height: auto;
   left: 10%;
-  top: 4%;
+  top: auto;
   /* background:rgb(36, 64, 87) */;
   background-image: linear-gradient(45deg, #474444, #ada6a7);
   border-radius: 25px;
