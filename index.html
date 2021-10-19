@@ -16,33 +16,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
 <body>
-    <header id="topHeader">
+    <header class="topHeader">
         <ul>
             <li>
-                <a href="#home" class="headerItem">Home</a>
+                <a href="#home" id="home">Home</a>
             </li>
             <li>
-                <a href="#news" class="headerItem">News</a>
+                <a href="#news" id="news">News</a>
             </li>
             <li>
-                <a href="#contact" class="headerItem">Contact</a>
+                <a href="#contact" id="contact">Contact</a>
             </li>
             <li>
-                <a href="#about" class="headerItem">About</a>
+                <a href="#about" id="about">About</a>
             </li>
         </ul>
     </header>
 </body>
 
 <script>
-    var fadeDur = 250
-    $('.headerItem').each(function() {
-        $(this).hover(function(){
-            $(this).animate({color: "#30D5C8"}, fadeDur)
-        }, function(){
-            $(this).animate({color: "#FFFFFF"}, fadeDur)
+    $(document).ready(function(){
+        var fadeDur = 150
+        var colors = {
+            "home": "#30D5C8",
+            "news": "#30C97D",
+            "contact": "#4F30C9",
+            "about": "#A530C9"
+        }
+
+        for(let [key, value] of Object.entries(colors)){
+            $("#" + key).hover(function(){
+                $(this).animate({color: value}, fadeDur)
+            }, function(){
+                $(this).animate({color: "#FFFFFF"}, fadeDur)
+            })
+        }
+
+        // $('.headerItem').each(function() {
+        //     $(this).hover(function(){
+        //         $(this).animate({color: }, fadeDur)
+        //     }, function(){
+        //         $(this).animate({color: ""}, fadeDur)
+        //     })
+        // });
+    })
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#topHeader").children().children().each(function(i){
+            console.log($(this))
         })
-    });
+    })
 </script>
 
 </html>

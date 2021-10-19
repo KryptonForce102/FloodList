@@ -20,7 +20,7 @@ li {
   display: inline-block;
 }
 
-.headerItem {
+a {
   display: block;
   padding: 8px;
   background-color: transparent;
@@ -29,7 +29,7 @@ li {
   color: white;
 }
 
-#topHeader {
+.topHeader {
   position: absolute;
   width: 80%;
   height: 10%;
