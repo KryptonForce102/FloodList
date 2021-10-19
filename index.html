@@ -46,8 +46,10 @@
 
         for(let [key, value] of Object.entries(colors)){
             $("#" + key).hover(function(){
+                $(this).stop()
                 $(this).animate({color: value}, fadeDur)
             }, function(){
+                $(this).stop()
                 $(this).animate({color: "#FFFFFF"}, fadeDur)
             })
         }
