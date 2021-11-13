@@ -28,9 +28,9 @@ a {
 }
 
 .topHeader {
-  position: absolute;
+  position: relative;
   width: 100%;
-  max-width: 99%;
+  max-width: 100%;
   height: auto;
   top: auto;
   background: #292929;
