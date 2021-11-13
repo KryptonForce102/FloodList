@@ -5,9 +5,9 @@
 $(document).ready(function(){
     var fadeDur = 250
     var colors = {
-        "homeBtn": "#30D5C8",
-        "newsBtn": "#30C97D",
-        "contactBtn": "#4F30C9",
+        "leaderboardBtn": "#30D5C8",
+        "socialsBtn": "#30C97D",
+        "mapListBtn": "#4F30C9",
         "aboutBtn": "#A530C9"
     }
 

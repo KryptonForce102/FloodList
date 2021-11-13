@@ -30,11 +30,16 @@ a {
 .topHeader {
   position: absolute;
   width: 100%;
-  max-width: 95%;
+  max-width: 99%;
   height: auto;
   top: auto;
-  left: 2.5%
-  /* background:rgb(36, 64, 87) */;
-  background-image: linear-gradient(45deg, #474444, #ada6a7);
-  border-radius: 25px;
+  background: #292929;
+}
+
+.topAnchor {
+  margin-right: 100px;
+}
+
+.topAnchor:last-child {
+  margin-right: 0px;
 }
