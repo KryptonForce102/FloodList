@@ -20,10 +20,10 @@ li {
 
 a {
   display: block;
-  padding: 8px;
+  padding: 0px;
   background-color: transparent;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 250%;
+  font-size: 100%;
   color: white;
 }
 
