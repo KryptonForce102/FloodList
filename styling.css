@@ -11,7 +11,7 @@ ul {
   text-align: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 8px;
 }
 
 li {
@@ -23,7 +23,7 @@ a {
   padding: 6px;
   background-color: transparent;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 200%;
+  font-size: 100%;
   color: white;
 }
 
@@ -37,7 +37,7 @@ a {
 }
 
 .topAnchor {
-  margin-right: 70px;
+  margin-right: 0px;
 }
 
 .topAnchor:last-child {
