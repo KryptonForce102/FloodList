@@ -37,21 +37,12 @@ a {
 }
 
 .topHeader {
-  display:flex;
-  position: relative;
+  display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  top: auto;
-  background: black;
+  background: #292929;
   justify-content: space-between;
 }
 
-.topAnchor {
-  margin-right: 100px;
-}
-
-.topAnchor:last-child {
-  margin-right: 0px;
+#floodListLogo {
+  width: 20%;
 }
